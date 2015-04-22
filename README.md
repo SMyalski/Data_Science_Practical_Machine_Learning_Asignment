@@ -1,2 +1,4 @@
-# Data_Science_Practical_Machine_Learning_Asignment
-Assignment for practical machine learning project
+# Practical Machine Learning - Asignment
+Asignment project for Practical Machine Learning Course
+
+
