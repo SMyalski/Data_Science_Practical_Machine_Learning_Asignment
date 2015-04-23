@@ -42,7 +42,12 @@ trainSet = trainClean[inTrain, ]
 testSet = trainClean[-inTrain, ]
 ```
 
-I run analysis. I tested this step with different algorithms, some of them producing poor results and others taking too long to finish - with the one selected it was resonable. On my laptop it took about 2h to finish and results were satisfactory: 97% Accuracy. Probably it might be better with some other alghoritm but it took too long to compute and I did not tested all.
+
+I run analysis. I tested this step with different algorithms, some of them producing poor results and others taking too long to finish - with the one selected it was resonable. 
+Alorithms I tested were rpart, treebag, bagFDA, bagEarth, glm. For each succesful calculations I was checking confusion matrix both for train and test set. Finally I selected random forest as alghoritm most suitable among tested ones for this particular tast.
+
+
+On my laptop it took about 2h to finish and results were satisfactory: 97% Accuracy. Probably it might be better with some other alghoritm but it took too long to compute and I did not tested all.
 ```
 modelFit <- train(trainSet$classe ~ ., method='rf', preProcess="pca", data=trainSet)
 prediction = predict(modelFit, testSet)
