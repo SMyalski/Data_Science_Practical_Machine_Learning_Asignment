@@ -4,13 +4,13 @@ Asignment project for Practical Machine Learning Course
 I will shortly explain here how did I build model fit and estimated "classe" parameter for test data.
 To do this I will use code and comment certain blocks.
 
-First I prepare R by loading libraries and setting seed to make results reproducible
+First I am loading libraries and set seed
 ```
 library(caret)
 set.seed(1)
 ```
 
-Then I download train and test files and load them into R
+Then I am downloading train and test files and load them into R
 ```
 FILEuRL <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"
 download.file(FILEuRL,destfile="./data/train.csv")
